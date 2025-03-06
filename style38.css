@@ -1,43 +1,43 @@
 .header{
     text-align: center;
-    color:rgb(60, 25, 199);
+    color: rgb(60, 25, 199);
     font-weight: bolder;
     text-shadow: 4px 4px 6px rgb(46, 45, 45);
-    font-size:50px;
+    font-size: 50px;
 }
+
 body{
     background-color: rgb(54, 54, 54);
     font-family: arial;
 }
+
 .container{
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .match{
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    font-weight:bold ;
-    float:center;
+    font-weight: bold;
     font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: bolder;
     color: rgb(185, 189, 238);
 }
+
 input{
     width: 30px;
-    margin:10px;
-    text-align:center;
+    margin: 10px;
+    text-align: center;
     background-color: rgb(211, 226, 238);
-    color:rgb(24, 3, 105);
+    color: rgb(24, 3, 105);
     border: 0.5px solid rgb(66, 14, 255);
     font-weight: bolder;
     transition: all 0.3s ease-in-out;
 }
-
-
-
 
 input:hover{
     transform: scale(1.1);
@@ -66,28 +66,33 @@ button{
     justify-content: center;
     transition: all 0.3s ease-in-out;
 }
+
 button:hover{
     transform: scale(1.1);
     background-color: rgb(26, 139, 41);
 }
+
 .accept-container{
-    margin-top:20px;
-    display:flex;
+    margin-top: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .flag {
     width: 30px;
     height: 20px;
 }
+
 .colon {
     font-size: 22px;
     font-weight: bold;
 }
+
 hr{
     width: 30%;
-    size:2;
-    color:white;
+    size: 2;
+    color: white;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -96,8 +101,36 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-
 input[type="number"] {
     -moz-appearance: textfield;
 }
 
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 40px; 
+    }
+
+    input {
+        width: 60px; 
+        height: 50px; 
+        font-size: 24px; 
+    }
+
+    button {
+        width: 200px; 
+        height: 50px; 
+        font-size: 18px; 
+    }
+
+    .match {
+        font-size: 30px; 
+    }
+
+    .colon {
+        font-size: 28px; 
+    }
+
+    hr {
+        width: 60%; 
+    }
+}
